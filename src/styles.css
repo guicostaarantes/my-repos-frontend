@@ -2,27 +2,181 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  font-size: 14px;
+  background: #a18fdd;
 }
 
-div {
+.container {
+  margin: 40px;
+}
+
+.repos-container {
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: #00000066 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.repos-container h2 {
+  font-size: 32px;
+  padding: 20px;
+}
+
+.repos-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  list-style-type: none;
+}
+
+.repos-container ul li {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #a7a7a7;
+}
+
+.repos-container .no-repo-message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #a7a7a7;
+  padding: 20px;
+}
+
+.repos-container .no-repo-message p {
+  color: #9b9b9b;
+}
+
+.repos-container ul li .button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.repos-container ul li h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.repos-container ul li a {
+  font-size: 14px;
+  color: #424379;
+}
+
+.repos-container ul li .repo-data-container {
+  width: 100%;
+}
+
+.repos-container ul li .chip-container {
+  margin-top: 10px;
+}
+
+.repos-container ul li .chip-container div {
+  margin-right: 8px;
+}
+
+.repos-container ul li button {
+  background-color: #cc1616;
+  color: #eee;
+  height: 30px;
+}
+
+.repos-container ul li button:hover {
+  background-color: #a30d0d;
+}
+
+.add-repo-container {
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.add-repo-container h2 {
+  font-size: 32px;
+  padding: 20px;
+}
+
+.add-repo-container .add-repo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #a7a7a7;
+  padding-top: 20px;
+}
+
+.add-repo-container .add-repo-form > div {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.add-repo-container .WAMuiChipInput-chipContainer-36 {
+  min-height: 34px;
+  margin-bottom: 0px;
+}
+
+.add-repo-container .WAMuiChipInput-chipContainer-36::after {
+  border-bottom: 2px solid #3f51b5;
+}
+
+.add-repo-container .MuiInput-underline.Mui-focused:hover::before {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+.add-repo-container .MuiChip-root {
+  height: 24px;
+  margin: 4px 8px 4px 0;
+}
+
+.add-repo-container .MuiChip-root .MuiChip-deleteIcon {
+  height: 18px;
+}
+
+.add-repo-container button {
+  background: #7159c1;
+  color: #fff;
+}
+
+.add-repo-container button:hover {
+  background: #50399b;
+}
+
+/* body {
+  font-size: 14px;
+} */
+
+/* div {
   width: 100%;
   margin: 20px;
-}
+} */
 
-div li {
+/* div li {
   display: flex;
   align-items: center;
-}
+} */
 
-div li + li {
+/* div li + li {
   margin-top: 15px;
-}
+} */
 
-button {
+/* button {
   background: #7159c1;
   color: #fff;
   border: 0;
@@ -31,9 +185,9 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
-}
+} */
 
-div li button {
+/* div li button {
   margin: 0 15px;
   background: #ca4949;
-}
+} */
